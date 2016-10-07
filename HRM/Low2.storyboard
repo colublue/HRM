@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5Vp-Ab-0X5">
+            <objects>
+                <viewController id="zFv-Mq-vaH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n8M-ET-i1G"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Hg-k4-jj2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VYG-Hv-fTb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKs-so-UOU">
+                                <items>
+                                    <navigationItem title="請假" id="XVD-Zr-Ocz"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UC4-nM-DuV">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="MYS-3x-Odn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UC4-nM-DuV" secondAttribute="trailing" id="JTL-Lo-gIa"/>
+                            <constraint firstItem="tKs-so-UOU" firstAttribute="top" secondItem="n8M-ET-i1G" secondAttribute="bottom" id="JyU-3y-ap3"/>
+                            <constraint firstItem="UC4-nM-DuV" firstAttribute="leading" secondItem="VYG-Hv-fTb" secondAttribute="leading" id="SAY-UM-r5O"/>
+                            <constraint firstItem="UC4-nM-DuV" firstAttribute="top" secondItem="tKs-so-UOU" secondAttribute="bottom" constant="10" id="b4m-Yr-uSg"/>
+                            <constraint firstItem="tKs-so-UOU" firstAttribute="leading" secondItem="VYG-Hv-fTb" secondAttribute="leading" id="jb4-uR-23f"/>
+                            <constraint firstAttribute="trailing" secondItem="tKs-so-UOU" secondAttribute="trailing" id="pPE-3p-8AV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1LU-aD-V4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="139.880059970015"/>
+        </scene>
+    </scenes>
+</document>

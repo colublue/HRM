@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kT2-p3-axC">
+            <objects>
+                <viewController id="NtV-kd-Ryr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oJa-CZ-6nt"/>
+                        <viewControllerLayoutGuide type="bottom" id="AN6-lP-eDA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uGF-OY-YzJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIg-Mg-z93">
+                                <items>
+                                    <navigationItem title="打卡" id="LT2-hE-9gu"/>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FYP-FL-80B">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Isz-EI-OgA"/>
+                                </constraints>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時間顯示欄位" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cy1-cJ-HAr">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Q54-Vf-jwu">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQJ-xV-Qrh">
+                                        <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="DfA-LV-Umd"/>
+                                            <constraint firstAttribute="height" constant="40" id="YwZ-XO-MnN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="上班">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OsI-eP-xJP">
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="h0M-1c-N0n"/>
+                                            <constraint firstAttribute="height" constant="40" id="nax-Wk-e5V"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="下班">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bIg-Mg-z93" secondAttribute="trailing" id="6hl-TA-KRN"/>
+                            <constraint firstItem="Q54-Vf-jwu" firstAttribute="top" secondItem="cy1-cJ-HAr" secondAttribute="bottom" constant="40" id="95e-3y-Srw"/>
+                            <constraint firstItem="cy1-cJ-HAr" firstAttribute="top" secondItem="FYP-FL-80B" secondAttribute="bottom" constant="40" id="Asn-m0-ntL"/>
+                            <constraint firstItem="bIg-Mg-z93" firstAttribute="leading" secondItem="uGF-OY-YzJ" secondAttribute="leading" id="D4v-xi-Jay"/>
+                            <constraint firstItem="FYP-FL-80B" firstAttribute="leading" secondItem="uGF-OY-YzJ" secondAttribute="leading" id="MnR-Kj-Oex"/>
+                            <constraint firstItem="Q54-Vf-jwu" firstAttribute="centerX" secondItem="uGF-OY-YzJ" secondAttribute="centerX" id="k4E-Kv-f4V"/>
+                            <constraint firstAttribute="trailing" secondItem="FYP-FL-80B" secondAttribute="trailing" id="kfM-S8-n8q"/>
+                            <constraint firstItem="cy1-cJ-HAr" firstAttribute="centerX" secondItem="uGF-OY-YzJ" secondAttribute="centerX" id="qN0-FL-OVS"/>
+                            <constraint firstItem="FYP-FL-80B" firstAttribute="top" secondItem="bIg-Mg-z93" secondAttribute="bottom" constant="10" id="sX1-yA-rHi"/>
+                            <constraint firstItem="FYP-FL-80B" firstAttribute="top" secondItem="bIg-Mg-z93" secondAttribute="bottom" constant="10" id="uMO-yv-T1b"/>
+                            <constraint firstItem="bIg-Mg-z93" firstAttribute="top" secondItem="oJa-CZ-6nt" secondAttribute="bottom" id="wbe-wp-Wql"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSj-pl-WUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-246" y="179"/>
+        </scene>
+    </scenes>
+</document>
