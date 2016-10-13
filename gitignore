@@ -1,6 +1,6 @@
 
 # Created by https://www.gitignore.io/api/objective-c
-.DS_Store
+*.DS_Store
 ### Objective-C ###
 # Xcode
 #
