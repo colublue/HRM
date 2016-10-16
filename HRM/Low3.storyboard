@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--排班-->
         <scene sceneID="QnI-4F-64d">
             <objects>
                 <viewController id="Mvy-qj-T4K" sceneMemberID="viewController">
@@ -19,17 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQz-0l-PpF">
-                                <items>
-                                    <navigationItem title="排班" id="xkG-4z-0JY"/>
-                                </items>
-                            </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubL-MI-A1t">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="Qrs-er-w3Q"/>
-                                </constraints>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vij-1Z-BMB">
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OKF-FR-gOD">
@@ -127,23 +116,49 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubL-MI-A1t">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Qrs-er-w3Q"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="aC4-uY-ePu"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Vij-1Z-BMB" firstAttribute="top" secondItem="ubL-MI-A1t" secondAttribute="bottom" constant="30" id="DVW-nu-oQV"/>
-                            <constraint firstItem="QQz-0l-PpF" firstAttribute="leading" secondItem="p0i-Jq-FbG" secondAttribute="leading" id="IaK-Ee-5Gz"/>
-                            <constraint firstItem="ubL-MI-A1t" firstAttribute="top" secondItem="QQz-0l-PpF" secondAttribute="bottom" constant="10" id="LnG-BO-eXL"/>
                             <constraint firstItem="Vij-1Z-BMB" firstAttribute="leading" secondItem="p0i-Jq-FbG" secondAttribute="leadingMargin" constant="10" id="Oof-0h-328"/>
-                            <constraint firstAttribute="trailing" secondItem="QQz-0l-PpF" secondAttribute="trailing" id="Rih-ep-vmM"/>
                             <constraint firstItem="vWN-DF-trY" firstAttribute="leading" secondItem="p0i-Jq-FbG" secondAttribute="leadingMargin" constant="10" id="SfL-gl-cHk"/>
                             <constraint firstAttribute="trailing" secondItem="ubL-MI-A1t" secondAttribute="trailing" id="Vdm-Vy-yjp"/>
                             <constraint firstItem="ubL-MI-A1t" firstAttribute="leading" secondItem="p0i-Jq-FbG" secondAttribute="leading" id="WxK-iD-Ltu"/>
-                            <constraint firstItem="QQz-0l-PpF" firstAttribute="top" secondItem="Dg4-YG-twH" secondAttribute="bottom" id="eqL-eq-V73"/>
+                            <constraint firstItem="ubL-MI-A1t" firstAttribute="top" secondItem="p0i-Jq-FbG" secondAttribute="top" id="dYg-dD-JKb"/>
+                            <constraint firstAttribute="trailing" secondItem="ubL-MI-A1t" secondAttribute="trailing" id="dvs-1w-0vX"/>
+                            <constraint firstItem="ubL-MI-A1t" firstAttribute="centerX" secondItem="p0i-Jq-FbG" secondAttribute="centerX" id="fNd-Rc-fFb"/>
+                            <constraint firstItem="ubL-MI-A1t" firstAttribute="leading" secondItem="p0i-Jq-FbG" secondAttribute="leading" id="g7t-yx-1Bb"/>
                             <constraint firstItem="vWN-DF-trY" firstAttribute="top" secondItem="Vij-1Z-BMB" secondAttribute="bottom" constant="40" id="s7b-bI-7XM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="排班" id="tV2-O3-39U"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fso-Cd-kYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1120.8" y="63.418290854572717"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="38w-Om-fZq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q8e-Lj-Y77" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ddh-aA-cpE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mvy-qj-T4K" kind="relationship" relationship="rootViewController" id="xX7-jz-Nxv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="opa-jD-NSo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="181.59999999999999" y="63.418290854572717"/>
         </scene>

@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--打卡-->
         <scene sceneID="kT2-p3-axC">
             <objects>
                 <viewController id="NtV-kd-Ryr" sceneMemberID="viewController">
@@ -18,16 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIg-Mg-z93">
-                                <items>
-                                    <navigationItem title="打卡" id="LT2-hE-9gu"/>
-                                </items>
-                            </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FYP-FL-80B">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="Isz-EI-OgA"/>
-                                </constraints>
-                            </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時間顯示欄位" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cy1-cJ-HAr">
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -69,26 +59,48 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FYP-FL-80B">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Isz-EI-OgA"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="QjF-em-7kJ"/>
+                                </constraints>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="bIg-Mg-z93" secondAttribute="trailing" id="6hl-TA-KRN"/>
-                            <constraint firstItem="Q54-Vf-jwu" firstAttribute="top" secondItem="cy1-cJ-HAr" secondAttribute="bottom" constant="40" id="95e-3y-Srw"/>
-                            <constraint firstItem="cy1-cJ-HAr" firstAttribute="top" secondItem="FYP-FL-80B" secondAttribute="bottom" constant="40" id="Asn-m0-ntL"/>
-                            <constraint firstItem="bIg-Mg-z93" firstAttribute="leading" secondItem="uGF-OY-YzJ" secondAttribute="leading" id="D4v-xi-Jay"/>
-                            <constraint firstItem="FYP-FL-80B" firstAttribute="leading" secondItem="uGF-OY-YzJ" secondAttribute="leading" id="MnR-Kj-Oex"/>
-                            <constraint firstItem="Q54-Vf-jwu" firstAttribute="centerX" secondItem="uGF-OY-YzJ" secondAttribute="centerX" id="k4E-Kv-f4V"/>
-                            <constraint firstAttribute="trailing" secondItem="FYP-FL-80B" secondAttribute="trailing" id="kfM-S8-n8q"/>
-                            <constraint firstItem="cy1-cJ-HAr" firstAttribute="centerX" secondItem="uGF-OY-YzJ" secondAttribute="centerX" id="qN0-FL-OVS"/>
-                            <constraint firstItem="FYP-FL-80B" firstAttribute="top" secondItem="bIg-Mg-z93" secondAttribute="bottom" constant="10" id="sX1-yA-rHi"/>
-                            <constraint firstItem="FYP-FL-80B" firstAttribute="top" secondItem="bIg-Mg-z93" secondAttribute="bottom" constant="10" id="uMO-yv-T1b"/>
-                            <constraint firstItem="bIg-Mg-z93" firstAttribute="top" secondItem="oJa-CZ-6nt" secondAttribute="bottom" id="wbe-wp-Wql"/>
+                            <constraint firstItem="cy1-cJ-HAr" firstAttribute="top" secondItem="FYP-FL-80B" secondAttribute="bottom" constant="30" id="4Y0-m3-6xw"/>
+                            <constraint firstItem="FYP-FL-80B" firstAttribute="leading" secondItem="uGF-OY-YzJ" secondAttribute="leading" id="A6A-S7-AUR"/>
+                            <constraint firstItem="Q54-Vf-jwu" firstAttribute="top" secondItem="cy1-cJ-HAr" secondAttribute="bottom" constant="50" id="NhE-25-h8l"/>
+                            <constraint firstItem="FYP-FL-80B" firstAttribute="top" secondItem="uGF-OY-YzJ" secondAttribute="top" id="eVK-ap-HdC"/>
+                            <constraint firstAttribute="trailing" secondItem="FYP-FL-80B" secondAttribute="trailing" id="gTF-Mi-mL3"/>
+                            <constraint firstItem="FYP-FL-80B" firstAttribute="centerX" secondItem="uGF-OY-YzJ" secondAttribute="centerX" id="rJn-kA-oAW"/>
+                            <constraint firstItem="cy1-cJ-HAr" firstAttribute="centerX" secondItem="uGF-OY-YzJ" secondAttribute="centerX" id="uZN-62-GYr"/>
+                            <constraint firstItem="Q54-Vf-jwu" firstAttribute="centerX" secondItem="uGF-OY-YzJ" secondAttribute="centerX" id="zB9-2s-Nfy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="打卡" id="Imq-vc-ivP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSj-pl-WUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-246" y="179"/>
+            <point key="canvasLocation" x="692" y="178.56071964017991"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Qa-Hf-vdu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nTb-Pe-cWb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yWc-O5-6zz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NtV-kd-Ryr" kind="relationship" relationship="rootViewController" id="UGt-5F-LrR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FT2-8Q-Tl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247.19999999999999" y="178.56071964017991"/>
         </scene>
     </scenes>
 </document>

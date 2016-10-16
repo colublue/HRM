@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--薪資-->
         <scene sceneID="363-7k-gPf">
             <objects>
                 <viewController id="xOf-CR-NS5" sceneMemberID="viewController">
@@ -19,11 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5pW-f6-TKm">
-                                <items>
-                                    <navigationItem title="薪資" id="uJF-is-1w7"/>
-                                </items>
-                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ONn-Ny-Hxl">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jul-t5-9pS">
@@ -46,7 +41,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aTu-Wt-oBC" id="CRD-Cl-bzn">
-                                            <frame key="frameInset" width="375" height="90"/>
+                                            <frame key="frameInset" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UT6-rv-7Bb">
@@ -101,7 +96,7 @@
                                         <rect key="frame" x="0.0" y="118" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VMt-Tq-6tn" id="DgO-dI-GXO">
-                                            <frame key="frameInset" width="375" height="90"/>
+                                            <frame key="frameInset" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Qe6-ej-LKP">
@@ -156,7 +151,7 @@
                                         <rect key="frame" x="0.0" y="208" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uMZ-5K-u0v" id="JYA-Wx-FHg">
-                                            <frame key="frameInset" width="375" height="90"/>
+                                            <frame key="frameInset" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6U3-uE-jWk">
@@ -211,21 +206,38 @@
                                 <sections/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ONn-Ny-Hxl" firstAttribute="centerX" secondItem="gUy-KE-yKS" secondAttribute="centerX" id="3hJ-Pz-zZR"/>
-                            <constraint firstAttribute="trailing" secondItem="5pW-f6-TKm" secondAttribute="trailing" id="IQf-5L-3rP"/>
-                            <constraint firstItem="5pW-f6-TKm" firstAttribute="leading" secondItem="gUy-KE-yKS" secondAttribute="leading" id="SjP-YO-3DL"/>
-                            <constraint firstItem="VgS-Td-VXL" firstAttribute="top" secondItem="38e-bg-jQt" secondAttribute="bottom" id="ax0-WA-h5B"/>
-                            <constraint firstItem="38e-bg-jQt" firstAttribute="leading" secondItem="gUy-KE-yKS" secondAttribute="leading" id="kec-jv-JFS"/>
-                            <constraint firstItem="38e-bg-jQt" firstAttribute="top" secondItem="ONn-Ny-Hxl" secondAttribute="bottom" constant="20" id="ofy-kb-uiZ"/>
-                            <constraint firstItem="ONn-Ny-Hxl" firstAttribute="top" secondItem="5pW-f6-TKm" secondAttribute="bottom" constant="10" id="pDa-hH-j63"/>
-                            <constraint firstItem="5pW-f6-TKm" firstAttribute="top" secondItem="Ijk-vS-OCl" secondAttribute="bottom" id="sf8-BC-BHG"/>
-                            <constraint firstAttribute="trailing" secondItem="38e-bg-jQt" secondAttribute="trailing" id="usL-ZY-9wB"/>
+                            <constraint firstItem="VgS-Td-VXL" firstAttribute="top" secondItem="38e-bg-jQt" secondAttribute="bottom" id="51H-W7-ibG"/>
+                            <constraint firstItem="ONn-Ny-Hxl" firstAttribute="centerX" secondItem="gUy-KE-yKS" secondAttribute="centerX" id="6Jk-CK-SSC"/>
+                            <constraint firstItem="38e-bg-jQt" firstAttribute="leading" secondItem="gUy-KE-yKS" secondAttribute="leading" id="9kE-NZ-r1e"/>
+                            <constraint firstItem="38e-bg-jQt" firstAttribute="centerX" secondItem="gUy-KE-yKS" secondAttribute="centerX" id="V9X-CF-Z5c"/>
+                            <constraint firstItem="38e-bg-jQt" firstAttribute="top" secondItem="ONn-Ny-Hxl" secondAttribute="bottom" constant="10" id="bfQ-Bc-nBa"/>
+                            <constraint firstItem="ONn-Ny-Hxl" firstAttribute="top" secondItem="gUy-KE-yKS" secondAttribute="topMargin" constant="10" id="bqC-z6-3a0"/>
+                            <constraint firstAttribute="trailing" secondItem="38e-bg-jQt" secondAttribute="trailing" id="qLK-VU-HbX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="薪資" id="s4p-ds-Fo4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcJ-T4-YLD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="169.56521739130437"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Bm-16-wgh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZMe-7R-wpm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qhV-pL-mCD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xOf-CR-NS5" kind="relationship" relationship="rootViewController" id="8dS-Su-Mm3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRd-XO-v8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="200.80000000000001" y="169.56521739130437"/>
         </scene>
