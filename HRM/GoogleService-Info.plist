@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>593364960484-71ce3j1hgg0hcfbadqaoshs7uih5cm36.apps.googleusercontent.com</string>
+	<string>433460874492-fch33h27rehhis2h0v65hr1g6fikg9f3.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.593364960484-71ce3j1hgg0hcfbadqaoshs7uih5cm36</string>
+	<string>com.googleusercontent.apps.433460874492-fch33h27rehhis2h0v65hr1g6fikg9f3</string>
 	<key>API_KEY</key>
-	<string>AIzaSyArwNA427jGHJ69MCnkNrEYYTF6UAAAhCE</string>
+	<string>AIzaSyCe7qouTiDqJWTSqQxLemXjn00FKL5dfnY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>593364960484</string>
+	<string>433460874492</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.JimSu.HRM</string>
+	<string>com.HuangLiangJun.HRM</string>
 	<key>PROJECT_ID</key>
-	<string>hrmanager-68f57</string>
+	<string>hrmanager-f9a98</string>
 	<key>STORAGE_BUCKET</key>
-	<string>hrmanager-68f57.appspot.com</string>
+	<string>hrmanager-f9a98.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:593364960484:ios:b227dd91ec7e9353</string>
+	<string>1:433460874492:ios:17422bea2847c749</string>
 	<key>DATABASE_URL</key>
-	<string>https://hrmanager-68f57.firebaseio.com</string>
+	<string>https://hrmanager-f9a98.firebaseio.com</string>
 </dict>
 </plist>

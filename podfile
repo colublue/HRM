@@ -7,6 +7,7 @@ target 'HRM' do
    pod 'Firebase/Core'
    pod 'Firebase/Auth'
    pod 'Firebase/Database'
+   pod 'FSCalendar'
   # Pods for HRM
 
 end
