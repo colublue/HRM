@@ -42,7 +42,7 @@ static FIRDatabaseReference *_ref;
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
     [dateFormatter setDateFormat:@"YYYY/mm/dd HH:mm"];
     NSString *dateString = [dateFormatter stringFromDate:[NSDate date]];
-    NSDictionary *userInfoDetail = @{@"Authority": @0, @"Email": self.email, @"Info": userInfo, @"SignUpDate": dateString, @"UID": self.uid};
+    NSDictionary *userInfoDetail = @{@"Auth": @0, @"Email": self.email, @"Info": userInfo, @"SignUpDate": dateString, @"UID": self.uid};
     [[_ref child:self.displayName] updateChildValues:userInfoDetail];
     [[[_ref child:@"UID"] child:self.uid] setValue:self.displayName];
 }
