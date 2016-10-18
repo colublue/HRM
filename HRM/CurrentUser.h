@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSString *email;
 @property (strong, nonatomic) NSString *password;
 @property (strong, nonatomic) NSString *uid;
+@property (strong, nonatomic) NSNumber *authority;
 @property (strong, nonatomic) NSString *displayName;
 
 + (instancetype) sharedInstance;
