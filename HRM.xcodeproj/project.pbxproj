@@ -21,9 +21,13 @@
 		70A3986B1DA656DC0046CDAC /* Low2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A3986A1DA656DC0046CDAC /* Low2.storyboard */; };
 		70A3986D1DA657B90046CDAC /* Low3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A3986C1DA657B90046CDAC /* Low3.storyboard */; };
 		70A3986F1DA65B9E0046CDAC /* Low4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A3986E1DA65B9E0046CDAC /* Low4.storyboard */; };
-		70D1D89E1DA777D600D3D5FC /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D1D89D1DA777D600D3D5FC /* Homepage.storyboard */; };
+		70D1D89E1DA777D600D3D5FC /* AccountManage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D1D89D1DA777D600D3D5FC /* AccountManage.storyboard */; };
 		7AAC48412F70DADEDF7716CD /* Pods_HRM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465262FC63B996D9E36968C5 /* Pods_HRM.framework */; };
 		A99D6A421DB4D18700C54FBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A99D6A411DB4D18700C54FBB /* GoogleService-Info.plist */; };
+		A9DC91151DB5202D00679708 /* SignInPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DC91141DB5202D00679708 /* SignInPageViewController.m */; };
+		A9DC91181DB5208C00679708 /* SignUpPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DC91171DB5208C00679708 /* SignUpPageViewController.m */; };
+		A9DC911B1DB52B4100679708 /* UserInfoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DC911A1DB52B4100679708 /* UserInfoPageViewController.m */; };
+		A9DC91211DB530F600679708 /* CurrentUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DC91201DB530F600679708 /* CurrentUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,9 +50,18 @@
 		70A3986A1DA656DC0046CDAC /* Low2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Low2.storyboard; sourceTree = "<group>"; };
 		70A3986C1DA657B90046CDAC /* Low3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Low3.storyboard; sourceTree = "<group>"; };
 		70A3986E1DA65B9E0046CDAC /* Low4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Low4.storyboard; sourceTree = "<group>"; };
-		70D1D89D1DA777D600D3D5FC /* Homepage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
+		70D1D89D1DA777D600D3D5FC /* AccountManage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountManage.storyboard; sourceTree = "<group>"; };
 		9C326C437B5E56D3CFD3D639 /* Pods-HRM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRM/Pods-HRM.debug.xcconfig"; sourceTree = "<group>"; };
 		A99D6A411DB4D18700C54FBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9DC91111DB51FD900679708 /* HRM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HRM.entitlements; sourceTree = "<group>"; };
+		A9DC91131DB5202D00679708 /* SignInPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInPageViewController.h; sourceTree = "<group>"; };
+		A9DC91141DB5202D00679708 /* SignInPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInPageViewController.m; sourceTree = "<group>"; };
+		A9DC91161DB5208C00679708 /* SignUpPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpPageViewController.h; sourceTree = "<group>"; };
+		A9DC91171DB5208C00679708 /* SignUpPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpPageViewController.m; sourceTree = "<group>"; };
+		A9DC91191DB52B4100679708 /* UserInfoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoPageViewController.h; sourceTree = "<group>"; };
+		A9DC911A1DB52B4100679708 /* UserInfoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoPageViewController.m; sourceTree = "<group>"; };
+		A9DC911F1DB530F600679708 /* CurrentUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentUser.h; sourceTree = "<group>"; };
+		A9DC91201DB530F600679708 /* CurrentUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentUser.m; sourceTree = "<group>"; };
 		C4F51A188CFDA3104D88D8D6 /* Pods-HRM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRM.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRM/Pods-HRM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +106,7 @@
 		706159CA1D94231800D2530B /* HRM */ = {
 			isa = PBXGroup;
 			children = (
+				A9DC91111DB51FD900679708 /* HRM.entitlements */,
 				706159CE1D94231800D2530B /* AppDelegate.h */,
 				706159CF1D94231800D2530B /* AppDelegate.m */,
 				706159D11D94231800D2530B /* ViewController.h */,
@@ -101,7 +115,7 @@
 				706159D91D94231800D2530B /* LaunchScreen.storyboard */,
 				706159DC1D94231900D2530B /* Info.plist */,
 				A99D6A411DB4D18700C54FBB /* GoogleService-Info.plist */,
-				70D1D89D1DA777D600D3D5FC /* Homepage.storyboard */,
+				A9DC91121DB51FEF00679708 /* AccountManage */,
 				70A3981C1DA62BE10046CDAC /* High1.storyboard */,
 				70A3981E1DA62DB80046CDAC /* High2.storyboard */,
 				70A398201DA6302D0046CDAC /* High3.storyboard */,
@@ -122,6 +136,22 @@
 				706159CC1D94231800D2530B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9DC91121DB51FEF00679708 /* AccountManage */ = {
+			isa = PBXGroup;
+			children = (
+				A9DC911F1DB530F600679708 /* CurrentUser.h */,
+				A9DC91201DB530F600679708 /* CurrentUser.m */,
+				A9DC91131DB5202D00679708 /* SignInPageViewController.h */,
+				A9DC91141DB5202D00679708 /* SignInPageViewController.m */,
+				A9DC91161DB5208C00679708 /* SignUpPageViewController.h */,
+				A9DC91171DB5208C00679708 /* SignUpPageViewController.m */,
+				A9DC91191DB52B4100679708 /* UserInfoPageViewController.h */,
+				A9DC911A1DB52B4100679708 /* UserInfoPageViewController.m */,
+				70D1D89D1DA777D600D3D5FC /* AccountManage.storyboard */,
+			);
+			name = AccountManage;
 			sourceTree = "<group>";
 		};
 		F032C6B35B18A5FB77BEF9D7 /* Pods */ = {
@@ -169,6 +199,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = F29672WPZ9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -201,7 +236,7 @@
 				70A398211DA6302D0046CDAC /* High3.storyboard in Resources */,
 				70A3981D1DA62BE10046CDAC /* High1.storyboard in Resources */,
 				70A3986F1DA65B9E0046CDAC /* Low4.storyboard in Resources */,
-				70D1D89E1DA777D600D3D5FC /* Homepage.storyboard in Resources */,
+				70D1D89E1DA777D600D3D5FC /* AccountManage.storyboard in Resources */,
 				70A3986D1DA657B90046CDAC /* Low3.storyboard in Resources */,
 				70A3981F1DA62DB80046CDAC /* High2.storyboard in Resources */,
 				70A398251DA633EA0046CDAC /* High5.storyboard in Resources */,
@@ -267,8 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				706159D31D94231800D2530B /* ViewController.m in Sources */,
+				A9DC91151DB5202D00679708 /* SignInPageViewController.m in Sources */,
+				A9DC911B1DB52B4100679708 /* UserInfoPageViewController.m in Sources */,
+				A9DC91181DB5208C00679708 /* SignUpPageViewController.m in Sources */,
 				706159D01D94231800D2530B /* AppDelegate.m in Sources */,
 				706159CD1D94231800D2530B /* main.m in Sources */,
+				A9DC91211DB530F600679708 /* CurrentUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +420,7 @@
 			baseConfigurationReference = 9C326C437B5E56D3CFD3D639 /* Pods-HRM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HRM/HRM.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = F29672WPZ9;
 				INFOPLIST_FILE = HRM/Info.plist;
@@ -395,6 +435,7 @@
 			baseConfigurationReference = C4F51A188CFDA3104D88D8D6 /* Pods-HRM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HRM/HRM.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = F29672WPZ9;
 				INFOPLIST_FILE = HRM/Info.plist;
