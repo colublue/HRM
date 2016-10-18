@@ -29,7 +29,7 @@ static FIRDatabaseReference *_ref;
         if (user != nil) {
             self.uid = [NSString stringWithString:user.uid];
         } else {
-            NSLog(@"Error (Account Creation): %@", error);
+            NSLog(@"Error (Account creation): %@", error);
         }
     }];
 }
@@ -44,7 +44,7 @@ static FIRDatabaseReference *_ref;
     NSString *dateString = [dateFormatter stringFromDate:[NSDate date]];
     NSDictionary *userInfoDetail = @{@"Authority": @0, @"Email": self.email, @"Info": userInfo, @"SignUpDate": dateString, @"UID": self.uid};
     [[_ref child:self.displayName] updateChildValues:userInfoDetail];
-    [[[_ref child:@"UID"] child:self.uid] setValue:self.displayName];
+//    [[[_ref child:@"UID"] child:self.uid] setValue:self.displayName];
 }
 
 @end

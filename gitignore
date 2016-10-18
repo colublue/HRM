@@ -1,6 +1,6 @@
 
 # Created by https://www.gitignore.io/api/objective-c
-*.DS_Store
+
 ### Objective-C ###
 # Xcode
 #
@@ -24,6 +24,7 @@ xcuserdata/
 ## Other
 *.moved-aside
 *.xcuserstate
+*.DS_Store
 
 ## Obj-C/Swift specific
 *.hmap
