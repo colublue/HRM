@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "CurrentUser.h"
+
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -18,6 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [FIRApp configure];
+    [CurrentUser sharedInstance];
     return YES;
 }
 

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8eN-7P-sZy">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8eN-7P-sZy">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In Page View Controller-->
         <scene sceneID="miB-YA-i77">
             <objects>
-                <viewController id="dis-Ti-3oi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInPageViewController" id="dis-Ti-3oi" customClass="SignInPageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TVc-1N-BZE"/>
                         <viewControllerLayoutGuide type="bottom" id="jl1-Pj-6At"/>
@@ -74,6 +74,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="signInBtnPressed:" destination="dis-Ti-3oi" eventType="touchUpInside" id="4f2-Le-YuH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTa-qq-phm">
                                                 <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,6 +91,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="createNewAccountBtnPressed:" destination="dis-Ti-3oi" eventType="touchUpInside" id="j9H-ck-qvT"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="忘記密碼？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g70-aA-x5a">
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -107,17 +113,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="vQV-gf-CGA"/>
                     <connections>
-                        <segue destination="GI7-9f-nHd" kind="show" id="3nD-sv-pxL"/>
+                        <outlet property="emailField" destination="0At-Dx-kBE" id="HXG-eB-fkV"/>
+                        <outlet property="passwordField" destination="lQ5-eq-iEQ" id="eer-QQ-Y7i"/>
+                        <segue destination="GI7-9f-nHd" kind="show" identifier="SignUpPageSegue" id="WLi-SK-oJC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUc-FQ-vYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1220" y="114.69265367316342"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up Page View Controller-->
         <scene sceneID="vUt-tV-oMP">
             <objects>
-                <viewController id="GI7-9f-nHd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpPageViewController" id="GI7-9f-nHd" customClass="SignUpPageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o42-SK-TOP"/>
                         <viewControllerLayoutGuide type="bottom" id="fPe-jQ-tNA"/>
@@ -161,6 +169,9 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aM3-RI-LOO">
                                 <state key="normal" title="確認"/>
+                                <connections>
+                                    <action selector="createUserAccountBtnPressed:" destination="GI7-9f-nHd" eventType="touchUpInside" id="cOm-vd-sB2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="確認密碼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuP-rh-68N">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -188,17 +199,20 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="hyr-RM-VHd" kind="show" id="yl7-Ty-hGY"/>
+                        <outlet property="emailField" destination="RPJ-k2-oPR" id="Xdb-Yj-iIx"/>
+                        <outlet property="passwordField" destination="3Ri-1U-Zgf" id="Y1N-6l-WcR"/>
+                        <outlet property="reconfirmPasswordField" destination="C0j-cM-WPB" id="Iyv-S7-CND"/>
+                        <segue destination="hyr-RM-VHd" kind="show" identifier="UserInfoPageSegue" id="UH2-cc-P83"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RF5-Pl-zQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2007" y="115"/>
         </scene>
-        <!--View Controller-->
+        <!--User Info Page View Controller-->
         <scene sceneID="MwW-9u-fdx">
             <objects>
-                <viewController id="hyr-RM-VHd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserInfoPageViewController" id="hyr-RM-VHd" customClass="UserInfoPageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZYQ-LV-vD3"/>
                         <viewControllerLayoutGuide type="bottom" id="xk7-ng-jyT"/>
@@ -340,24 +354,6 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1XJ-rU-eR4">
-                                <frame key="frameInset" minX="18" minY="398" width="149" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="電子信箱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYn-cW-FJG">
-                                        <frame key="frameInset" minY="5" width="70" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xXp-OJ-sfI">
-                                        <frame key="frameInset" minX="80" width="70" height="31"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WqP-jM-hbk">
                                 <frame key="frameInset" minX="279" minY="257" width="80" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -430,9 +426,32 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sq-9Q-D8X">
+                                <state key="normal" title="完成"/>
+                                <connections>
+                                    <action selector="completeAccountCreationBtnPressed:" destination="hyr-RM-VHd" eventType="touchUpInside" id="i02-mt-DpU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.89794412820000002" green="0.97861796079999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xk7-ng-jyT" firstAttribute="top" secondItem="0sq-9Q-D8X" secondAttribute="bottom" constant="100" id="jxc-YE-BEX"/>
+                            <constraint firstItem="0sq-9Q-D8X" firstAttribute="centerX" secondItem="huG-Pf-1Z9" secondAttribute="centerX" id="t2j-hZ-Thg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="IDCardNumberField" destination="7qV-Jn-Fvc" id="E9u-ET-aio"/>
+                        <outlet property="birthdayField" destination="dYq-QZ-3yg" id="nTu-sY-EpY"/>
+                        <outlet property="bloodTypeField" destination="jWn-0t-7Qw" id="k9j-rf-qb9"/>
+                        <outlet property="cellphoneNumberField" destination="UDZ-R3-fdZ" id="0gN-a3-OFz"/>
+                        <outlet property="genderField" destination="afm-DB-TKJ" id="661-vR-1w4"/>
+                        <outlet property="heightField" destination="kUb-ZC-CsP" id="aCy-Yf-h22"/>
+                        <outlet property="mailingAddressField" destination="MWX-j3-ahF" id="v7g-Kg-cKU"/>
+                        <outlet property="marriageField" destination="MpB-zC-uAW" id="4Mq-1o-fgf"/>
+                        <outlet property="nameField" destination="wXQ-bE-nop" id="s8t-fB-RKK"/>
+                        <outlet property="positionField" destination="JAx-mZ-Udj" id="hIt-PB-UyN"/>
+                        <outlet property="weightField" destination="wFE-Cc-AgC" id="Brk-Uq-Zod"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mq6-10-DuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
