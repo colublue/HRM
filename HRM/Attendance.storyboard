@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Punch-->
+        <scene sceneID="VXu-8m-g9M">
+            <objects>
+                <viewController id="wWL-nR-Z9F" userLabel="Punch" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KPm-Nb-kNQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="49k-bD-sXb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QuH-5g-GY4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ARd-zg-GHS">
+                                <frame key="frameInset" width="1000" height="1000"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9x-aV-7Dg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="CcT-vv-Qy9"/>
+                                    <constraint firstAttribute="height" constant="49" id="rZA-6n-eXg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="選擇班別" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ztD-Ah-npB">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8U-RL-jAh"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fy-At-SWP">
+                                <frame key="frameInset" height="44" maxY="172"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dRZ-m2-Uic"/>
+                                    <barButtonItem title="Done" id="JLf-oL-HTT"/>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05g-9m-rcQ">
+                                <state key="normal" title="打卡"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C8U-RL-jAh" firstAttribute="leading" secondItem="QuH-5g-GY4" secondAttribute="leading" id="8dq-Xt-8Ao"/>
+                            <constraint firstItem="P9x-aV-7Dg" firstAttribute="centerX" secondItem="QuH-5g-GY4" secondAttribute="centerX" id="Ewo-2i-KdX"/>
+                            <constraint firstAttribute="bottom" secondItem="ARd-zg-GHS" secondAttribute="bottom" id="GAJ-Zq-KDU"/>
+                            <constraint firstItem="ztD-Ah-npB" firstAttribute="centerX" secondItem="QuH-5g-GY4" secondAttribute="centerX" id="Lo8-xA-9HK"/>
+                            <constraint firstItem="ARd-zg-GHS" firstAttribute="leading" secondItem="QuH-5g-GY4" secondAttribute="leading" id="NmX-2U-R93"/>
+                            <constraint firstItem="05g-9m-rcQ" firstAttribute="top" secondItem="ztD-Ah-npB" secondAttribute="bottom" constant="14" id="eZW-rS-qLm"/>
+                            <constraint firstItem="ARd-zg-GHS" firstAttribute="top" secondItem="QuH-5g-GY4" secondAttribute="top" id="h4A-I3-gL4"/>
+                            <constraint firstAttribute="bottom" secondItem="C8U-RL-jAh" secondAttribute="bottom" id="hNx-sT-wIU"/>
+                            <constraint firstAttribute="trailing" secondItem="ARd-zg-GHS" secondAttribute="trailing" id="puF-hH-vDD"/>
+                            <constraint firstItem="05g-9m-rcQ" firstAttribute="centerX" secondItem="QuH-5g-GY4" secondAttribute="centerX" id="tm4-ap-AHm"/>
+                            <constraint firstItem="ztD-Ah-npB" firstAttribute="top" secondItem="P9x-aV-7Dg" secondAttribute="bottom" constant="8" id="u3h-w8-t8n"/>
+                            <constraint firstAttribute="trailing" secondItem="C8U-RL-jAh" secondAttribute="trailing" id="uDi-47-WAq"/>
+                            <constraint firstItem="P9x-aV-7Dg" firstAttribute="centerY" secondItem="QuH-5g-GY4" secondAttribute="centerY" id="un1-Eh-ZdE"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="打卡" id="1qE-T0-9bg"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGD-MG-JHV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3320.8000000000002" y="87.706146926536732"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1ok-b6-m7d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3vj-by-gQx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OOc-bb-7Uq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wWL-nR-Z9F" kind="relationship" relationship="rootViewController" id="B3i-JS-wjT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUf-uE-b9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2381.5999999999999" y="87.706146926536732"/>
+        </scene>
+    </scenes>
+</document>
